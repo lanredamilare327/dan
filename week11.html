@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olanrewaju Daniel</title>
+    <link rel="stylesheet" href="week11.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+     <header>
+        <nav class="navbar">
+            <div class="logo">Olanrewaju Daniel</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+     </header>          
+
+     <!-- hero section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+            <h1>Hello, I'm<span class="highlight">Olanrewaju Daniel</span></h1>
+            <p>A Frontend Developer passionate about clean and modern web design.</p>
+            <button class="btn">View My Work</button>
+        </div>
+        <div class="hero-image">
+            <img src="./images/lanre-ai-image-1.webp?auto=format&fit=crop&w=800&q=80" alt="lanre ai image">
+        </div>
+        </div>
+      </section>
+
+<!-- about section -->
+<section id="about" >
+   <div class="about-content">
+    <div class="about-image">
+        <img src="./images/laptop-img.jpeg?auto=format&fit=crop&w=800&q=80" alt="About Me">
+    </div>
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>i'm someone who loves transforming ideas into digital experiences.I enjoy learning new technologies and improving user interfaces with creativity and precision.</p>
+        <p>when i'm not coding, i'm exploring design trends, reading about startups, or teaching others how to code. </p>
+        <a href="https://github.com/lanredamilare327" class="flink" target="_blank">Github Profile</a>
+    </div>
+   </div>
+</section>
+
+<!-- skills section -->
+ <section class="reveal">
+    <section id="skills" class="skills-section">
+
+  <h2 class="section-title">Skills.</h2>
+
+  <div class="skills-container">
+
+    <!-- HTML -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-html5"></i>
+      <h3>HTML</h3>
+      <div class="progress-bar">
+        <div class="progress html" data-width="90">0%</div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS</h3>
+      <div class="progress-bar">
+        <div class="progress css" data-width="85">0%</div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-js"></i>
+      <h3>JavaScript</h3>
+      <div class="progress-bar">
+        <div class="progress js" data-width="75">0%</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+  </section>
+
+
+  
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section reveal">
+  <h2 class="section-title">Projects.</h2>
+
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="web">Web</button>
+  </div>
+
+  <div class="projects-container">
+
+
+ <!-- Project 1 -->
+    <div class="project-card web glass-card">
+      <div class="project-image">
+        <img src="/images/Netninja.png" alt="Portfolio Project">
+
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>Netninja-pro book</h3>
+            <p>
+              A responsive book website built with HTML, CSS, and JavaScript.
+              Features a clean design, interactive elements, and smooth animations for an engaging user experience.
+            </p>
+
+            <div class="project-buttons">
+              <a href="https://github.com/lanredamilare327" target="_blank" class="project-btn github">GitHub</a>
+              <a href="https://lanredamilare327.github.io/book/" target="_blank" class="project-btn live">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card  glass-card">
+      <div class="project-image">
+        <img src="/images/youtube.JPG" alt="YouTube Clone">
+
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>YouTube Clone</h3>
+            <p>
+              A sleek YouTube-inspired front-end clone showcasing responsive design,
+              clean UI structure, and smooth interactions.
+            </p>
+
+            <div class="project-buttons">
+              <a href="https://github.com/lanredamilare327" target="_blank" class="project-btn github">GitHub</a>
+              <a href="https://lanredamilare327.github.io/lanreyoutube/" target="_blank" class="project-btn live">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- FORM -->
+<section id="contact" class="contact-section">
+ <div class="contact-form-container glass-card">
+    <h2>Let Us Hear From You.</h2>
+
+    <form id="contactForm">
+      <div class="input-group">
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Your Email">
+        <small class="error"></small>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p class="success-message" id="successMessage"></p>
+    </form>
+  </div>
+
+  <!-- INFO CARDS -->
+  <div class="contact-info">
+
+  <div class="info-card glass-card">
+    <i class="fas fa-envelope"></i>
+    <h3>Email</h3>
+    <p>lanredamilare327@gmail.com</p>
+  </div>
+
+  <div class="info-card glass-card">
+    <i class="fab fa-github"></i>
+    <h3>GitHub</h3>
+    <p>github.com/lanredamilare327</p>
+  </div>
+
+  <div class="info-card glass-card">
+    <i class="fas fa-location-dot"></i>
+    <h3>Location</h3>
+    <p>Lagos, Nigeria</p>
+  </div>
+
+  </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- LEFT -->
+    <div class="footer-brand">
+      <h3>DANIEL</h3>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-socials">
+      <a href="https://github.com/lanredamilare327"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/olanrewaju-oluwadamilare-4967123b7/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm5L0%2FKOZSCmJRlLyDI9pzA%3D%3D"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:lanredamilare327@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 OLANREWAJU DANIEL. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
