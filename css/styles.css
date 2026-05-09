@@ -7,10 +7,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background-color: #fff;
+    color: var(--text-primary);
+    background-color: var(--background-primary);
     line-height: 1.6;
     font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html, body {
@@ -49,19 +50,14 @@ h1,h2 {
 }
 
 .dark-mode {
-  --bg: #0f172a91;
-  --text: #e5e7eb;
-  --nav-dark: #ffffff;
+  --background-primary: #000;
+  --text-primary: #e5e7eb;
+  --nav-dark: #e5e7eb;
   --glass: rgba(219, 208, 208, 0.05);
 }
 
-body.dark-mode {
-  background: #000;
-  color: #e5e7eb;
-}
-
 body.dark-mode .hero {
-  background-color: #000;
+  background-color: var(--background-primary);
 }
 
 body.dark-mode input::placeholder,
@@ -622,7 +618,7 @@ input:focus, textarea:focus {
 
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
-  color: var(--text);
+  color: var(--text-primary);
 }
 
 .footer-content {
@@ -647,7 +643,7 @@ input:focus, textarea:focus {
 
 .footer-links a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-primary);
   position: relative;
   font-size: 0.9rem;
 }

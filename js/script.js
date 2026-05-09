@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-/CONTACT FORM SECTION/
+// CONTACT FORM SECTION //
 const form = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/SCROLL REVEAL ANIMATION/
+// SCROLL REVEAL ANIMATION //
 
 const reveals = document.querySelectorAll(".reveal");
 
